@@ -1,0 +1,40 @@
+<script lang="ts">
+
+    export let d : number = 6;
+    let rolled : number;
+    let rolledText : string = "You didnt rolled yet.";
+    let rollHistory : Array<Number> = [];
+    let roll = () => {
+        rolled = Math.floor(Math.random() * d + 1);
+        rollHistory[rollHistory.length] = rolled;
+
+        rolledText = "You rolled " + rolled
+    }
+
+
+</script>
+
+<style>
+    div {
+        background-color: bisque;
+        min-width: fit-content;
+        max-width: 100%;
+        border: 2px black solid;
+
+    }
+    p {
+        font-size: 2em;
+    }
+</style>
+
+<div>
+    <p> This is dice with {d} eyes. </p>
+    <p>{rolledText}</p>
+
+    <p>History of rolls: 
+    {#each rollHistory as r}
+        {r}, &nbsp;
+    {/each}
+    </p>
+    <button on:click={roll}>Throw d{d}</button>
+</div>

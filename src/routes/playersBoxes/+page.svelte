@@ -1,5 +1,5 @@
 <script>
-	import Player from "./Player.svelte";
+	import Player from "../../components/Player.svelte";
 
     $: players = [];  
     let name;
