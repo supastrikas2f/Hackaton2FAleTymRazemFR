@@ -1,0 +1,32 @@
+{
+    "properties": [
+      {"name": "Mediterranean Avenue", "type": "Not-Special", "color": "Brown", "cost": 60},
+      {"name": "Baltic Avenue", "type": "Not-Special", "color": "Brown", "cost": 60},
+      {"name": "Oriental Avenue", "type": "Not-Special", "color": "Light Blue", "cost": 100},
+      {"name": "Vermont Avenue", "type": "Not-Special", "color": "Light Blue", "cost": 100},
+      {"name": "Connecticut Avenue", "type": "Not-Special", "color": "Light Blue", "cost": 120},
+      {"name": "St. Charles Place", "type": "Not-Special", "color": "Pink", "cost": 140},
+      {"name": "States Avenue", "type": "Not-Special", "color": "Pink", "cost": 140},
+      {"name": "Virginia Avenue", "type": "Not-Special", "color": "Pink", "cost": 160},
+      {"name": "St. James Place", "type": "Not-Special", "color": "Orange", "cost": 180},
+      {"name": "Tennessee Avenue", "type": "Not-Special", "color": "Orange", "cost": 180},
+      {"name": "New York Avenue", "type": "Not-Special", "color": "Orange", "cost": 200},
+      {"name": "Kentucky Avenue", "type": "Not-Special", "color": "Red", "cost": 220},
+      {"name": "Indiana Avenue", "type": "Not-Special", "color": "Red", "cost": 220},
+      {"name": "Illinois Avenue", "type": "Not-Special", "color": "Red", "cost": 240},
+      {"name": "Atlantic Avenue", "type": "Not-Special", "color": "Yellow", "cost": 260},
+      {"name": "Ventnor Avenue", "type": "Not-Special", "color": "Yellow", "cost": 260},
+      {"name": "Marvin Gardens", "type": "Not-Special", "color": "Yellow", "cost": 280},
+      {"name": "Pacific Avenue", "type": "Not-Special", "color": "Green", "cost": 300},
+      {"name": "North Carolina Avenue", "type": "Not-Special", "color": "Green", "cost": 300},
+      {"name": "Pennsylvania Avenue", "type": "Not-Special", "color": "Green", "cost": 320},
+      {"name": "Park Place", "type": "Not-Special", "color": "Dark Blue", "cost": 350},
+      {"name": "Boardwalk", "type": "Not-Special", "color": "Dark Blue", "cost": 400},
+      {"name": "Reading Railroad", "type": "Special", "color": "Railroad", "cost": 200},
+      {"name": "Pennsylvania Railroad", "type": "Special", "color": "Railroad", "cost": 200},
+      {"name": "B&O Railroad", "type": "Special", "color": "Railroad", "cost": 200},
+      {"name": "Short Line", "type": "Special", "color": "Railroad", "cost": 200},
+      {"name": "Electric Company", "type": "Special", "color": "Utility", "cost": 150},
+      {"name": "Water Works", "type": "Special", "color": "Utility", "cost": 150}
+    ]
+  }
