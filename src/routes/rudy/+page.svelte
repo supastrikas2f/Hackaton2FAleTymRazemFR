@@ -7,7 +7,7 @@
     
     onMount(async () => {
     console.log("Anything rlly")
-    let json = await fetch("http://localhost:5181/properties.json").then((x) => x.json());
+    let json = await fetch("/properties.json").then((x) => x.json());
     properties = (json).properties;
     console.log(properties)
     });
