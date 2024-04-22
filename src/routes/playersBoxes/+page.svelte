@@ -17,6 +17,10 @@
 </script>
 
 <style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
     #flexBox{
         display: flex;
         align-items: center;
@@ -27,7 +31,6 @@
         display: inline-grid;
         grid-template-columns: auto auto auto auto;      
         margin: auto; 
-        border: 1px solid black;
     }
     
     #addPlayerBox{
@@ -39,14 +42,27 @@
     }
 
     #addPlayerBox input{
-        width: 150px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(202, 240, 255);
+        width: 220px;
+        height: 50px;
         margin: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #buttonAddPlayer{
+        font-size: 20px;
+        padding: 0.2em 1.3em;
     }
 
     #playerBox{
         border: 5px solid black;
         border-radius: 40px;
         margin: 20px;
+        background-color: #bfebfd;
     }
 
     #deletePlayer{
@@ -70,7 +86,7 @@
 
         <div id="addPlayerBox" class="boxesMargin">
             <input type="text" bind:value = {name}> 
-            <button on:click={addPlayer}>Add Player</button>
+            <button id="buttonAddPlayer" on:click={addPlayer}>Add Player</button>
         </div>
     </div>
 </div>
