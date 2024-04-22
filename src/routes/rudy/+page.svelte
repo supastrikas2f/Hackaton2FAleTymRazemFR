@@ -1,19 +1,26 @@
 <script>
-    import propertiesData from '../properties.json';
-      import TransferForm from './TransferForm.svelte';
-      import Property from './Property.svelte';
+    import { onMount } from 'svelte';
+    import TransferForm from '../../components/TransferForm.svelte';
+    import Property from '../../components/Property.svelte';
     
-      
+    let properties = [];
+    
+    onMount(async () => {
+    console.log("Anything rlly")
+    let json = await fetch("http://localhost:5181/properties.json").then((x) => x.json());
+    properties = (json).properties;
+    console.log(properties)
+    });
+    
       let balance = 1500;
-      let properties = propertiesData.properties;
-      let buyedProperties = [];
+      let boughtProperties = [];
       let players = [
         { name: 'Gracz 1', balance: 1500 },
         { name: 'Gracz 2', balance: 1500 }
       ];
       function handleBuy(property) {
         if(balance >= property.cost) {
-          buyedProperties.push(property);
+          boughtProperties.push(property);
           properties[properties.indexOf(property)] = null;
           balance -= property.cost;
         }
@@ -28,7 +35,7 @@
     
     <div class="properties-container">
         <h1>Zakupione nieruchomości</h1>
-        {#each buyedProperties as property}
+        {#each boughtProperties as property}
           <Property property = {property} handleBuy = {handleBuy} {balance} />
         {/each}
         <h1>Nieruchomości do zakupienia</h1>

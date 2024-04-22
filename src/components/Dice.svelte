@@ -1,9 +1,9 @@
 <script lang="ts">
 
-    export let d : number = 6;
-    let rolled : number;
-    let rolledText : string = "You didnt rolled yet.";
-    let rollHistory : Array<Number> = [];
+    export let d = 6;
+    let rolled;
+    let rolledText = "You haven't rolled yet.";
+    let rollHistory = [];
     let roll = () => {
         rolled = Math.floor(Math.random() * d + 1);
         rollHistory[rollHistory.length] = rolled;

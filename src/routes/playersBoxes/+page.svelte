@@ -70,7 +70,7 @@
 
         <div id="addPlayerBox" class="boxesMargin">
             <input type="text" bind:value = {name}> 
-            <button on:click={addPlayer}>Dodaj gracza</button>
+            <button on:click={addPlayer}>Add Player</button>
         </div>
     </div>
 </div>
