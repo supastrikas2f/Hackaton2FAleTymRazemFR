@@ -10,6 +10,8 @@
 
         rolledText = "You rolled " + rolled
     }
+    let removed = false;
+    let classes = ""
 
 
 </script>
@@ -25,11 +27,17 @@
     p {
         font-size: 2em;
     }
+    .removed {
+        position: absolute;
+        left: -5000px;
+    }
 </style>
 
-<div>
+<div class={classes}>
+
     <p> This is dice with {d} eyes. </p>
     <p>{rolledText}</p>
 
     <button on:click={roll}>Throw d{d}</button>
+    <button on:click={() => {classes = "removed"}}>Remove this dice</button>
 </div>

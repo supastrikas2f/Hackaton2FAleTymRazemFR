@@ -11,10 +11,6 @@
         }else{alert("Podaj liczbę oczek")}
 
     }
-    function deleteDice()
-    {
-        dice[dice.indexOf(number)] = null;
-    }
 </script>
 
 <style>
@@ -29,6 +25,8 @@
         grid-template-columns: auto auto auto auto;      
         margin: auto; 
         border: 1px solid black;
+        min-width: 80%;
+        min-height: 30em;
     }
     
     #addDice{
@@ -58,7 +56,6 @@
 
 <p>Podaj liczbę oczek</p>
 <div id="addDice" class="boxesMargin">
-    <button id="deleteDice" on:click={() => deleteDice()}>Delete Dice</button>  
     <input type="number" bind:value = {number}> 
     <button on:click={() => addDice(number)}>Add Dice</button>  
 </div>
