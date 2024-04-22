@@ -31,10 +31,5 @@
     <p> This is dice with {d} eyes. </p>
     <p>{rolledText}</p>
 
-    <p>History of rolls: 
-    {#each rollHistory as r}
-        {r}, &nbsp;
-    {/each}
-    </p>
     <button on:click={roll}>Throw d{d}</button>
 </div>
