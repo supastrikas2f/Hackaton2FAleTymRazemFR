@@ -67,13 +67,20 @@
     
     #PlayerBox{     
         width: 350px;
-        height: 400px; 
+        height: 480px;
         text-align: center;      
     }
     
     ul{
         text-align: left;
         list-style: none;
+    }
+
+    #WinsTab, #ScoreTab, #MoneyTab{
+        border-bottom: 4px solid #008ac0;
+        margin: 0.9em 0em;
+        padding: 0.5em;
+        background-color: #d8f1fc;
     }
 
     #ScoreTab input{
